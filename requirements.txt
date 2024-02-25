@@ -1,5 +1,5 @@
-httpx
-aiolimiter
-parsel
-tenacity
-playwright
+pandas
+openpyxl
+pyarrow
+scrapy
+scrapy-zyte-api
