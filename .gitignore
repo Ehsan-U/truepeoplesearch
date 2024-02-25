@@ -10,3 +10,6 @@ db/
 *.xlsx
 test.ipynb
 test.py
+*.mp4
+*.zip
+*.csv
