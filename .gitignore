@@ -7,7 +7,6 @@ output/
 db/
 *.ipynb
 *.pyc
-*.xlsx
 test.ipynb
 test.py
 *.mp4
