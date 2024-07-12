@@ -12,3 +12,5 @@ test.py
 *.mp4
 *.zip
 *.csv
+.vscode/
+old_spider.py
