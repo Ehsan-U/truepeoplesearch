@@ -77,18 +77,18 @@ class TruePeopleSearch(scrapy.Spider):
                 score = 85
             elif name.first == query['first_name'] and name.last == query['last_name'] and city_check:
                 score = 80
-            elif name.last == query['last_name'] and city_check and name.middle == query['middle_name']:
+            elif name.first == query['first_name'] and name.last == query['last_name']:
                 score = 75
+            elif name.last == query['last_name'] and city_check and name.middle == query['middle_name']:
+                score = 70
             elif name.last == query['last_name'] and city_check:
                 score = 65
-            elif name.first == query['first_name'] and name.last == query['last_name']:
-                score = 70
             if score >= 65:
                 link = response.urljoin(result.xpath("./@data-detail-link").get())
                 results.append((score, link))
         if results:
             sorted_results = sorted(results, key=lambda x: x[0], reverse=True)
-            return sorted_results
+            return sorted_results[:1]
         self.logger.info("No results found within criteria")
         return []
     
