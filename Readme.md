@@ -6,4 +6,4 @@ Installation:
 
 Now you can run the tool with this command:
 
-- `scrapy crawl truepeoplesearch`
+- `scrapy crawl people`
