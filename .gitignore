@@ -1,0 +1,14 @@
+.idea/
+.env
+.venv/
+__pycache__/
+*.log
+output/
+db/
+*.ipynb
+*.pyc
+test.ipynb
+test.py
+*.mp4
+*.zip
+*.csv
